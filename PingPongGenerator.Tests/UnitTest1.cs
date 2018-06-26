@@ -42,9 +42,9 @@ namespace PingPongGenerator.Tests
         public void ThisIsOurTest()
         {
             PingPong testPingPong = new PingPong();
-            List<string> testList = new List<string>(new string [] { "1", "2", "ping" });
+            List<string> testList = new List<string>(new string [] { "1", "2", "ping", "4", "pong", "ping", "7", "8", "ping", "pong", "11", "ping", "13", "14", "ping pong"});
             //List<int> list = new List<int>(new int[] { 2, 3, 7 });
-            CollectionAssert.AreEqual(testList, testPingPong.CreateList(3));
+            CollectionAssert.AreEqual(testList, testPingPong.CreateList(15));
         }
     }
 

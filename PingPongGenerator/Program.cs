@@ -77,7 +77,11 @@ namespace PingPongGenerator
         {
             static void Main(string[] args)
             {
-                Console.WriteLine("Hello World!");
+                Console.WriteLine("Enter a number!");
+                //public string stringInputtedNumber = Console.ReadLine();
+                int inputtedNumber = int.Parse(Console.ReadLine());
+                PingPong myPingPong = new PingPong();
+                myPingPong.CreateList(inputtedNumber);
             }
         }
     
