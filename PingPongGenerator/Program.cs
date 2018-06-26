@@ -70,6 +70,8 @@ namespace PingPongGenerator
             }
 
             return numberList;
+
+
         }
 
     }
@@ -77,11 +79,14 @@ namespace PingPongGenerator
         {
             static void Main(string[] args)
             {
+            while (true)
+            {
                 Console.WriteLine("Enter a number!");
                 //public string stringInputtedNumber = Console.ReadLine();
                 int inputtedNumber = int.Parse(Console.ReadLine());
                 PingPong myPingPong = new PingPong();
                 myPingPong.CreateList(inputtedNumber);
+            }
             }
         }
     
