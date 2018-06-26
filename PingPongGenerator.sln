@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PingPongGenerator", "PingPongGenerator\PingPongGenerator.csproj", "{FD6E20AC-81C1-4E42-A724-08A4E1BD1BBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PingPongGenerator.Tests", "PingPongGenerator.Tests\PingPongGenerator.Tests.csproj", "{A4F587E3-FF72-4EEB-A674-CB0F8322F6C2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FD6E20AC-81C1-4E42-A724-08A4E1BD1BBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD6E20AC-81C1-4E42-A724-08A4E1BD1BBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD6E20AC-81C1-4E42-A724-08A4E1BD1BBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD6E20AC-81C1-4E42-A724-08A4E1BD1BBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4F587E3-FF72-4EEB-A674-CB0F8322F6C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4F587E3-FF72-4EEB-A674-CB0F8322F6C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4F587E3-FF72-4EEB-A674-CB0F8322F6C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4F587E3-FF72-4EEB-A674-CB0F8322F6C2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
