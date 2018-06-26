@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace PingPongGenerator
 {
@@ -6,46 +7,78 @@ namespace PingPongGenerator
     public class PingPong
     {
         public int inputtedNumber;
-        public string PingPongCheck(int inputtedNumber)
+        public bool PingPongCheck(int inputtedNumber)
         {
             if (inputtedNumber % 5 == 0 && inputtedNumber % 3 == 0)
             {
-                return "ping pong";
+                return true;
             }
             else
             {
-                return inputtedNumber.ToString();
+                return false;
             }
         }
 
-        public string PingCheck(int inputtedNumber)
+        public bool PingCheck(int inputtedNumber)
         {
-            if (inputtedNumber % 3 == 0) {
-                return "ping";
-            } else {
-                return inputtedNumber.ToString();
+            if (inputtedNumber % 3 == 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
             }
         }
 
-        public string PongCheck(int inputtedNumber)
+        public bool PongCheck(int inputtedNumber)
         {
             if (inputtedNumber % 5 == 0)
             {
-                return "pong";
+                return true;
             }
             else
             {
-                return inputtedNumber.ToString();
+                return false;
             }
         }
-
-    }
-
-    class Program
-    {
-        static void Main(string[] args)
+       
+        public List<string> numberList = new List<string>();
+        public List<string> CreateList(int inputtedNumber)
         {
-            Console.WriteLine("Hello World!");
+
+            for (int i = 1; i <= inputtedNumber; ++i)
+            {
+                if (PingPongCheck(i))
+                {
+                    numberList.Add("ping pong");
+                }
+                else if (PingCheck(i))
+                {
+                    numberList.Add("ping");
+
+                }
+                else if (PongCheck(i))
+                {
+                    numberList.Add("pong");
+                }
+                else
+                {
+                    numberList.Add(i.ToString());
+                }
+                Console.WriteLine(numberList[i-1]);
+            }
+
+            return numberList;
         }
+
     }
+        class Program
+        {
+            static void Main(string[] args)
+            {
+                Console.WriteLine("Hello World!");
+            }
+        }
+    
 }
